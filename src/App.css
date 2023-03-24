@@ -36,3 +36,49 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  color: #61dafb;
+  background-color: rgb(138, 138, 138);
+  margin: 20px 50px;
+  padding: 20px;
+  border-radius: 20px;
+  transition: background-color 10s ease-in-out;
+}
+
+.container:hover {
+  background-color: blue;
+  color: rgb(255, 255, 255);
+  scroll-timeline: calc(1000);
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .container {
+    animation: App-logo-spin infinite 1s linear;
+  }
+} */
+
+.container {
+  animation: App-text-spin infinite 1s linear;
+}
+
+@keyframes App-text-spin {
+  from {
+    transform: rotate(0deg);
+    background-color: rgb(136, 255, 0);
+    color: white;
+  }
+
+  to {
+    transform: rotate(360deg);
+    background-color: blueviolet;
+    color: black;
+  }
+}
+
+.person {
+  background-color: darkkhaki;
+  border: 3px solid rebeccapurple;
+  margin: 30px;
+  border-radius: 20px;
+}
